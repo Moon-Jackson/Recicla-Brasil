@@ -1,0 +1,31 @@
+body{
+    background-color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/*Aqui se inicia a barra de navegação*/
+
+.navbar{
+    display: flex;
+    justify-content: space-around ;
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 1em;
+}
+
+
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/*Aqui se encerra a barra de navegação*/
+
+/*Aqui se inicia a parte dos Cards*/
+
+.CARDS{
+    padding-left: 2%;
+}
