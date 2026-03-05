@@ -1,4 +1,6 @@
-body{
+body{ 
+    
+    padding-bottom: 2000px;
     background-color: #1B5E20;
     font-family: sans-serif;
 }
@@ -22,7 +24,8 @@ body{
 ;
 }
 
-.navbar a:hover{
+.navbar a:hover
+{
     transition: 2s;
     transform: scale(1.2,1.2);
 }
