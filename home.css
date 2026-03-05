@@ -1,7 +1,7 @@
 body{
-    background-color: aquamarine;
+    background-color: rgb(52, 77, 68);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    padding-bottom: 50%;
 }
 
 /*Aqui se inicia a barra de navegação*/
@@ -10,7 +10,6 @@ body{
     display: flex;
     justify-content: space-around ;
     background-color: lightgray;
-    border-radius: 25px;
     padding: 1em;
 }
 
@@ -20,6 +19,13 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: x-large;
+}
+
+.navbar a:hover{
+
+    transition: 1s;
+    transform: scale(1.2, 1.2);
 }
 
 /*Aqui se encerra a barra de navegação*/
@@ -27,5 +33,37 @@ body{
 /*Aqui se inicia a parte dos Cards*/
 
 .CARDS{
-    padding-left: 2%;
+    display: flex;
+    gap: 20px;
+    padding-left: 5%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: AnimaçãoDoCardAparecendo 2.0s ease forwards;
+}
+
+/* Cria uma animação chamada "aparecer" */
+@keyframes AnimaçãoDoCardAparecendo {
+
+    /* "to" representa o estado final da animação */
+    to {
+
+        /* Define que o elemento ficará totalmente visível */
+        opacity: 1;
+
+        /* Move o elemento para sua posição original no eixo vertical */
+        transform: translateY(0);
+    }
+}
+
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: 1.0s;
+}
+
+.CARDS a:hover{
+
+    transition: 2s;
+    transform: scale(1.2, 1.2);
+
 }
