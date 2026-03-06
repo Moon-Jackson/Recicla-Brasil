@@ -1,25 +1,29 @@
 body{
-    background-color: rgb(52, 77, 68);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 50%;
+    background-color: #2E7D32;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/*Aqui se inicia a barra de navegação*/
+/*Aqui se INICIA a barra de navegação*/
 
 .navbar{
     display: flex;
-    justify-content: space-around ;
-    background-color: lightgray;
+    justify-content: flex-start;
+    background-color: rgb(34, 34, 34);
     padding: 1em;
+
 }
 
 
 
 .navbar a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: x-large;
+    margin-right: 3%;
+    font-size: medium;
+    
+
 }
 
 .navbar a:hover{
@@ -28,17 +32,21 @@ body{
     transform: scale(1.2, 1.2);
 }
 
-/*Aqui se encerra a barra de navegação*/
 
-/*Aqui se inicia a parte dos Cards*/
+/*Aqui se ENCERRA a barra de navegação*/
+
+/*Aqui se INICIA a parte dos Cards*/
 
 .CARDS{
     display: flex;
-    gap: 20px;
+    position: absolute;
+    gap: 30px;
     padding-left: 5%;
     opacity: 0;
     transform: translateY(30px);
     animation: AnimaçãoDoCardAparecendo 2.0s ease forwards;
+    
+
 }
 
 /* Cria uma animação chamada "aparecer" */
@@ -55,6 +63,16 @@ body{
     }
 }
 
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body a{
+    margin-top: auto;
+}
+
+
 
 .card:hover{
     transform: translateY(-5px);
@@ -64,6 +82,15 @@ body{
 .CARDS a:hover{
 
     transition: 2s;
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
 
+}
+
+/*Aqui se ENCERRA a parte dos Cards*/
+
+.MAPA{
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50%;
+    padding-left: 53%;
 }
