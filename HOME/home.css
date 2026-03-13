@@ -1,0 +1,108 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+    background: linear-gradient(to right, #5babc4, #51ad44);
+}
+
+/* ================= HEADER ================= */
+/* ---------- Primeira Navbar ---------- */
+header{
+    width: 100%;
+    background: linear-gradient(to right, #3c6e01, #d6d3d3);
+    padding: 5px 0;
+}
+
+header h1{
+    color: aliceblue;
+    padding-left: 1%;
+    font-weight: 700;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+    padding-left: 0%;
+    align-items: center;
+}
+
+.links a{
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 5px 15px;
+    transition: 0.2s;
+}
+
+.links a:hover{
+    transform: scale(1.1);
+    color: #000c04;
+}
+/* ---------- Fim da Primeira Navbar ---------- */
+/* ================= HEADER ================= */
+
+
+/* ---------- Segunda Navbar ---------- */
+.navbar2{
+    width: 100%;
+    background: linear-gradient(to right, #424141, #000000);
+    padding: 5px 0;
+    padding-left: 1%;
+    text-align: right;
+}
+
+.links2{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.links2 a{
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 5px 15px;
+    transition: 0.2s;
+    
+}
+
+.links2 a:hover{
+    transform: scale(1.1);
+    color: #00e1ff;
+}
+/* ---------- Fim da Segunda Navbar ---------- */
+
+
+/* ================= VIDEO DE FUNDO ================= */
+
+.video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================= FIM DO VIDEO DE FUNDO ================= */
+
+.inicio{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 8%;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: x-large;
+}
+.inicio h1{
+    font-size: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
