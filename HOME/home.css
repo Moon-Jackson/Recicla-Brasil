@@ -11,6 +11,8 @@ header{
     width: 100%;
     background: linear-gradient(to right, #3c6e01, #d6d3d3);
     padding: 5px 0;
+    position: relative;
+    z-index: 3;
 }
 
 header h1{
@@ -40,7 +42,6 @@ header h1{
     color: #000c04;
 }
 /* ---------- Fim da Primeira Navbar ---------- */
-/* ================= HEADER ================= */
 
 
 /* ---------- Segunda Navbar ---------- */
@@ -50,12 +51,13 @@ header h1{
     padding: 5px 0;
     padding-left: 1%;
     text-align: right;
+    position: relative;
+    z-index: 3; /* Esse comando controla qual elemento fica na frente ou atrás de outro na página. */
 }
 
 .links2{
     display: flex;
     gap: 20px;
-    
 }
 
 .links2 a{
@@ -65,7 +67,6 @@ header h1{
     display: inline-block;
     padding: 5px 15px;
     transition: 0.2s;
-    
 }
 
 .links2 a:hover{
@@ -75,15 +76,21 @@ header h1{
 /* ---------- Fim da Segunda Navbar ---------- */
 
 
+/* ================= SECTION ================= */
+
+section{
+    position: relative;
+    min-height: 100vh;
+}
+
+
 /* ================= VIDEO DE FUNDO ================= */
 
 .video{
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .video video{
@@ -94,14 +101,22 @@ header h1{
 
 /* ================= FIM DO VIDEO DE FUNDO ================= */
 
+
 .inicio{
+    position: absolute;
     text-align: center;
     color: aliceblue;
-    margin-top: 8%;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: x-large;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
+
 .inicio h1{
+    white-space: nowrap; /* Isso vai impedir que o texto > RECICLA BRASIL < não quebre para a proxima linha  */
+    text-align: center;
     font-size: 90px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
